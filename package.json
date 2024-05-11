@@ -1,0 +1,40 @@
+{
+  "name": "classes",
+  "version": "1.0.0",
+  "description": "classes homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fkupme/classes.git"
+  },
+  "keywords": [
+    "classes"
+  ],
+  "author": "fkupme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fkupme/classes/issues"
+  },
+  "homepage": "https://github.com/fkupme/classes#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "eslint-plugin-jest": "^28.5.0",
+    "globals": "^15.2.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "core-js": "^3.37.0"
+  }
+}
