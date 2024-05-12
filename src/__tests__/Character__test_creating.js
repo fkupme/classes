@@ -86,10 +86,10 @@ describe('char creating', () => {
 		expect(new Character(...args)).toBeInstanceOf(Character);
 	})
 
-	test.each(errorArray)('test errors', (args, err)=>{
+	test.each(errorArray)('test errors', (args, error)=>{
 		const getError = () =>{
 			new Character(...args)
 		}
-		expect(getError).toThrow(err);
+		expect(getError).toThrow(error);
 	})
 })
