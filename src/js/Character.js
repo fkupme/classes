@@ -9,8 +9,7 @@ export default class Character {
 
 	static #checkType(type) {
 		if (!Object.keys(this.#typesObject).includes(type) || typeof(type) !== 'string') {
-			console.log(type)
-			throw new Error('invalid character type ' + type);
+			throw new Error('invalid character type');
 		}
 	}
 
@@ -44,9 +43,12 @@ export default class Character {
 
 	damage(points){
 		if (this.health === 0) {
-			return;
+			throw new Error('то что мертво умереть не может');
 		}
 		this.health -= points * (1 - this.defence / 100)
+
+		if (this.health<0){
+			this.health = 0
+		}
 	}
 }
-
