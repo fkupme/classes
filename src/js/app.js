@@ -5,5 +5,3 @@ import './Magician'
 import './Swordsman'
 import './Zombie'
 import './Undead'
-
-new Character('aqweqw', 'Undead')

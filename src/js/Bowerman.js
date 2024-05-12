@@ -1,6 +1,8 @@
 import Character from "./Character";
 class Bowerman extends Character {
-	
+	constructor(name, type = "Bowman"){
+		super(name, type);
+	}
 };
-
-console.log(new Bowerman('123123', 'Bowerman'));
+console.log(Bowerman);
+console.log(new Bowerman('owerman'));

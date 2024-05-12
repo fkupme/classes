@@ -1,15 +1,16 @@
 export default class Character {
 	static #checkName(name) {
-		if (!typeof (name) === 'string' || name.length < 2 || name.length > 10) {
+		if (typeof(name) !== 'string' || name.length < 2 || name.length > 10) {
 			throw new Error('invalid character name');
 		}
 	};
 
-	static #typesObject = { 'Bowman': '25/25', 'Swordsman': '40/10', 'Magician': '10/40', 'Daemon': '25/25', 'Undead': '40/10', 'Zombie': '10/40' }
+	static #typesObject = { 'Bowman': '25/25', 'Swordsman': '40/10', 'Magician': '10/40', 'Daemon': '10/40', 'Undead': '25/25', 'Zombie': '40/10' }
 
 	static #checkType(type) {
-		if (!Object.keys(this.#typesObject).includes(type) || !typeof (type) === 'string') {
-			throw new Error('invalid character type');
+		if (!Object.keys(this.#typesObject).includes(type) || typeof(type) !== 'string') {
+			console.log(type)
+			throw new Error('invalid character type ' + type);
 		}
 	}
 
@@ -17,7 +18,6 @@ export default class Character {
 		const statsArray = this.#typesObject[type].split('/');
 		this.attack = statsArray[0];
 		this.defence = statsArray[1];
-		console.log(statsArray, this.attack, this.defence);
 	};
 
 	constructor(name, type) {
@@ -30,8 +30,6 @@ export default class Character {
 		Character.#setAttackAndDefence(type);
 		this.attack = +this.constructor.attack;
 		this.defence = +this.constructor.defence;
-		this.levelUp();
-		this.damage(120)
 	};
 
 	levelUp(){
@@ -52,4 +50,3 @@ export default class Character {
 	}
 }
 
-console.log(new Character('qqwe', 'Magician'));
