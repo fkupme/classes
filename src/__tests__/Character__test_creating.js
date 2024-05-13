@@ -7,9 +7,8 @@ const testArray = [
 			name: 'Bowman',  
 			type: "Bowman", 
 			health: 100, 
-			level: 1, 
-			attack: 25, 
-			defence: 25}
+			level: 1
+		}
 	],
 	[
 		['Swordsman', 'Swordsman'],
@@ -17,9 +16,7 @@ const testArray = [
 			name: 'Swordsman',
 			 type: "Swordsman", 
 			 health: 100, 
-			 level: 1, 
-			 attack: 40, 
-			 defence: 10
+			 level: 1
 		}
 	],
 	[
@@ -28,9 +25,7 @@ const testArray = [
 		name: 'Magician', 
 		type: "Magician", 
 		health: 100, 
-		level: 1, 
-		attack: 10, 
-		defence: 40
+		level: 1
 	}
 	],
 	[
@@ -39,9 +34,7 @@ const testArray = [
 			name: 'Daemon', 
 			type: "Daemon", 
 			health: 100, 
-			level: 1, 
-			attack: 10, 
-			defence: 40
+			level: 1
 		}
 	],
 	[
@@ -50,9 +43,7 @@ const testArray = [
 			name: 'Zombie',
 			type: "Zombie",
 			health: 100,
-			level: 1,
-			attack: 40,
-			defence: 10,
+			level: 1
 		}
 	],
 	[
@@ -61,9 +52,7 @@ const testArray = [
 			name: 'Undead',
 			type: "Undead",
 			health: 100,
-			level: 1,
-			attack: 25,
-			defence: 25,
+			level: 1
 		}
 	],
 ]
